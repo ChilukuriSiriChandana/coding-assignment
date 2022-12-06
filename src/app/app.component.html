@@ -1,0 +1,36 @@
+
+
+
+<!-- heading welcome -->
+<h3> Welcome to Favorite NPM Packages </h3>
+
+<div class="page-wrapper">
+  <div class="jumbotron">
+    <style>
+      div {
+        border-color: rgb(99, 105, 116);
+        border-style: solid;
+      }
+    </style>
+  <p> You don't have any favs yet. Please add </p>
+  <div ng-controller="ButtonCtrl">
+    <div>
+     <style >
+      div {
+        text-align: center;
+      }
+     </style>
+      <div>
+        <a (click) = "AddFav()" >
+          <button id="button1" ej-button e-size="sizelarge">Add Fav</button>
+        </a>
+      </div>
+      <router-outlet></router-outlet>
+     </div>
+  </div>
+  </div> 
+</div>
+
+
+
+  

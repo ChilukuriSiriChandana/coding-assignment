@@ -1,0 +1,90 @@
+<p>search for your fav npm!</p>
+
+<div class="page-container">
+      <!-- HEADER DESKTOP-->
+    <div class="container text-center">
+    
+      <div class="container">
+         <div class="row">
+            <div class="search-results">
+              <input class="form-control" type="text" name="search"  autocomplete="off" >
+            </div>
+            <h3> Results</h3>
+          </div>
+      </div>
+      
+    </div>
+        
+      
+      <!-- END HEADER DESKTOP-->
+       <!--Main content-->
+
+    <div class="main-content">
+                
+                <form name="myForm" flex layout="column" style="overflow: auto; height: 100%;">
+                    <input type="radio" id="Express" name="fav_package" value="Express">
+                    <label> Express</label><br>
+
+                    <input type="radio" id="AsyncJS" name="fav_package" value="AsyncJS">
+                    <label>AsyncJS</label><br>
+
+                    <input type="radio" id="Lodash" name="fav_package" value="Lodash">
+                    <label >Lodash</label><br>
+
+                    <input type="radio" id="Cloudinary" name="fav_package" value="Cloudinary">
+                    <label>Cloudinary</label><br>
+
+                    <input type="radio" id="Axios" name="fav_package" value="Axios">
+                    <label>Axios</label><br>
+                     
+                  <input type="radio" id="Karma" name="fav_package" value="Karma">
+                    <label>Karma</label><br>
+
+                  <input type="radio" id="Molecular" name="fav_package" value="Molecular">
+                    <label>Molecular</label><br>
+
+                  <input type="radio" id="Grunt" name="fav_package" value="Grunt">
+                    <label>Grunt</label><br>
+
+                  <input type="radio" id="Debug" name="fav_package" value="Debug">
+                    <label>Debug</label><br>
+
+                  <input type="radio" id="Bower" name="fav_package" value="Bower">
+                    <label>Bower</label><br>
+                </form>
+            
+        
+    </div>
+    <br> 
+    <div>
+        <form >
+          <p>  why is this your fav?</p> 
+            <textarea name="message" rows="5" cols="30">
+            </textarea>
+            <br><br>
+         </form> 
+    </div>
+    <div ng-controller="ButtonCtrl">
+        <div>
+         <style >
+          div {
+            text-align: center;
+          }
+         </style>
+          <div>
+            <a (click) = "submit()" >
+              <button id="button1" ej-button e-size="sizelarge">submit</button>
+            </a>
+          </div>
+          <router-outlet></router-outlet>
+         </div>
+      </div>
+
+     
+</div>
+<!-- End page container-->
+
+
+
+
+
